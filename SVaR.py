@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Reading input file
-FX = pd.read_excel(r"V:\FAO\RMM\LON\MarketRiskEMG\EMG\Nirav\Python\TRY SVaR.xlsx")
+FX = pd.read_excel("Input.xlsx")
 
 
 # 1)Calculate 10 day returns
@@ -37,4 +37,4 @@ SVaR = (FX['VaR Tail']).mean()
 
 print(SVaR)
 
-FX.to_excel(r"V:\FAO\RMM\LON\MarketRiskEMG\EMG\Nirav\Python\Modified TRY SVaR.xlsx")
+FX.to_excel("Output.xlsx")
